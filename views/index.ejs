@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <style>
+        body {
+            font-family: Arial;
+            line-height: 30px;
+            color: #333;
+        }
+
+        .content {
+            text-align: center;
+            margin: 50px;
+        }
+        .logo{
+            padding-bottom: 20px;
+            width: 150px;
+        }
+        #payment-box {
+            padding: 20px;
+            
+            border: #E4E4E4 1px solid;
+            display: inline-block;
+            text-align: center;
+            border-radius: 3px;
+        }
+
+
+        .txt-title {
+            margin: 20px 0px 0px 0px;
+            color: #4e4e4e;
+        }
+
+        .txt-price {
+            margin-bottom: 10px;
+            color: #08926c;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <img class="logo" src="images/logo.png" />
+
+        <div class="row">
+        
+            <form  action="/cirklepay" method="POST">
+                <div class="row">
+                  
+                    <div class="input-field col s10">
+                        <input name="firstName" placeholder="First Name" id="first_name" type="text" class="validate">
+                        <label for="first_name">First Name</label>
+                    </div>
+                    <div class="input-field col s10">
+                        <input name="email" placeholder="Email Address" id="email" type="text" class="validate">
+                        <label for="email">Email Address</label>
+                    </div>
+                    <div class="input-field col s10">
+                        <input name="phone" placeholder="Phone Number" id="phone" type="text" class="validate">
+                        <label for="phone">Phone</label>
+                    </div>
+                    <div class="input-field col s10">
+                        <input name="amount" placeholder="Amount" id="amount" type="number" >
+                        <label for="amount">Amount</label>
+                    </div>                   
+                    
+                    <div class="input-field col s10">
+                        <input class="btn btn-large pulse" type="submit" value="Pay Now" />
+                    </div>
+
+
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

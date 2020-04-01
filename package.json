@@ -1,0 +1,20 @@
+{
+  "name": "cirklepay-react-native-sample-app",
+  "version": "1.0.0",
+  "description": "The easiest way to accept, process and disburse digital payments for businesses.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "Muhammad Umer Naeem",
+  "license": "GPLv2",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "consolidate": "^0.15.1",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "localtunnel": "^2.0.0",
+    "nodemon": "^2.0.2"
+  }
+}
